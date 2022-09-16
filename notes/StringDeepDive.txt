@@ -1,0 +1,110 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main(){
+//     println("hello world")
+    StringDataTypeDeepDive()
+}
+
+fun StringDataTypeDeepDive(){
+//     String is an array of characters
+//     
+	var Str: String = "Hello"
+//     or
+	var Str2 = "World"
+
+    
+//     below code will Show Error
+//     var ErrorStr : String = 'A'
+//     var ErrorString : String = 2
+//      
+    println(Str + Str2)
+    
+//     Kotlin Strings Are Immutable what is Immutable ?
+//     Immutable means that can change
+
+	var strPlus = "Hello "
+    strPlus += "every one"
+	println(strPlus)
+    
+    
+//     how to create empty string 
+//     
+	var strEmpty = String()
+    println(strEmpty)
+    
+    
+//     IMPORTANT PROPERTIES OF STRING
+     // string template 
+     // 
+    	var template : String = "Template"
+    	println("hello string $template")
+    
+    
+    
+	// length -> length will give you number of char in string
+	
+    var StrProperties = "Hello String Properties"
+    println(StrProperties.length)  //length also include space in string
+    var StrPropertiesTest = String()
+    StrPropertiesTest = "HELLO STRING PROPERTIES"
+    
+	// suppose you just need to print only hello from StrProperties
+	// how you can do this
+    
+    println(StrProperties.subSequence(0,5))
+    
+    // you need to compare to string how you will do
+    // by if
+    
+    if(StrPropertiesTest == StrProperties){
+        println(true)
+    }else{
+        println(false)
+    }
+    
+	// main failure of using if condition in comparing to string it will also check String Case 
+	// but kotlin provide compareTo funtion that compare with String case or Without String case
+    
+	//first without sting case 
+	//
+	//	 
+	//	 	 	 
+	//campare to return three type values
+	// 1> if compare value is equal than return 0
+	// 2> if passed value is greate return negative
+	// 3> if passed value is less than return possitive
+	// 
+	//   
+	println(StrPropertiesTest.compareTo(StrProperties,true)) // without string case and also equal so return 0
+    
+	// 2 point
+	println(StrPropertiesTest.compareTo(StrProperties))
+    // 3 point
+	println(StrProperties.compareTo(StrPropertiesTest))
+    
+    
+    
+    // as we ddiscuss string is an array of char
+    // so we can call string by index number
+	println(StrProperties[0])
+
+	// print string one char by one char
+	// like anshit -> a, n, s, h, i, t
+
+    for(element in StrProperties){
+        print("$element, ")
+    }
+    
+    // imporatant escape string	
+    // \n newline
+    // \t for tab
+    // \" double quote
+    // \' single quote
+    // \\ backslash
+    // \$ for dollar sign 	    
+	     
+    println()//it is for new line
+    print("newline \n this is for \t tab \n adding double quote \" and single quote \' and last dollar sing \$")
+}

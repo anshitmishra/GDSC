@@ -1,0 +1,172 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main(){
+//     println("hello world")
+    dataTypes()
+}
+
+fun dataTypes(){
+//kotlin is statically typed language like java that is the type of a variable is know during the compile time.
+
+//     kotlin built in data types
+//     1> Number
+//     2> Characters
+//     3> Booleans
+//     4> String
+//     5> Array
+//     
+//     uncomment to use this function
+//     
+//   NumberDataType()
+//   
+//    character()
+//    
+//    bool()
+//     
+//    StringsDataType()
+//      
+//     arrayDataType()
+}
+
+
+
+fun NumberDataType(){
+//     number data type have 6 inbuilt types
+//     1> Byte
+//     2> Short
+//     3> Int
+//     4> Long
+//     5> Double
+//     6> Float
+		
+//  Byte
+    	val range1 : Byte = 80 
+    	println(range1)
+//     the code below will give error why?
+//     val range2 : Byte = 200
+//     println(range2) 
+//     reason for why it will show error
+//     the range of byte in kotlin is 8 bits it means data range -128 to 127
+    
+ 
+//  Short
+	
+    val temperature : Short = -80 // range of 16 bits -32768 to 32767 
+    println("Eastern Antarctic temp $temperature") // explain $ sign what is use of that
+   
+// Int
+   	val Score : Int = 2 // range 32 bits -2^31 to 2^(31) - 1 
+    println("Cristiano Ronaldo score $Score")
+ 
+// Long
+    val youtube : Long = 250000000  // range of 64 bits -2^63 to 2^(63)-1
+    println(youtube)
+    // other way of define
+    val youtubeSub = 2500L // capital L in end that will define long
+    println(youtubeSub)
+
+
+// Double 
+   val milk : Double = 1.15 //range of 64 bits that means double precision 15 decimal place 
+   // below code will show error
+   // val milkError : Float = 2.15205265255556123
+   // println(milkError)
+   println("milk $milk l")
+
+
+
+//float
+	val water = 2.15F //range of 32 bits that means single precision 6 decimal place
+    // below code will show error
+    // val waterError = 2.15205265255F
+    // println(waterError)
+   	println("Water $water l")
+}
+
+
+fun character(){
+//     character define using ( Char ) and only declared in single quote
+//     
+    val letter : Char = 'A'
+//     or 
+	val letter1 : Char 
+    letter1 = 'B'
+
+    println(letter)    
+    println(letter1)
+
+}
+
+fun bool(){
+    val Condition : Boolean 
+    Condition = true
+    println("GDSC is a community : $Condition")
+	//  Boolean has a nullable counterpart Boolean? that can store a null    
+    var NullType : Boolean? = null
+    println("the condition is now $NullType")
+    NullType = true
+    println("the condition is now $NullType")
+}
+
+
+
+fun StringsDataType(){
+//     most important point (Strings are character arrays )
+//     
+
+// 	there are two type of strings
+// 	Escaped String
+// 	Row String
+// they work kind of same but they are enemy of each other
+// you can't use escaped string in Row string and row in escaped 
+ 
+    
+//     rowStrings defins in triple quotes
+ 	var rowString : String = """i am GDSC 
+    Community Member
+    	and 
+    I love learning new things
+    """
+    
+//     rowStrings defins in double quotes and may contain escape character like \n , \t , \b
+    var EscapedString : String = "i am anshit mishra \n and i am 18 year old"
+    
+    println(rowString)    
+    println(EscapedString)
+
+}
+
+fun arrayDataType(){
+    
+    // kotlin arrays are ek jaise like 
+    // of the same or a similar kind or nature
+    // 
+
+	val id = arrayOf(1,2,3,4,5)
+    val first = id[0]
+    val last = id[id.size - 1]
+    println(first)    
+    println(last)
+
+//     
+ 	val asc = Array(5,{i -> i*2})
+    for (i in asc){
+        print("$i, ")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

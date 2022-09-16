@@ -1,0 +1,43 @@
+introduction of kotlin
+
+hello world
+
+kotlin variable
+
+kotlin data type
+
+kotlin string
+
+kotlin type conversion
+
+//kotlin operator
+
+//basic output/input
+
+kotlin comment
+
+kotlin if/else
+
+kotlin when
+
+kotlin for loop
+
+kotlin while loop
+
+kotlin do while loop
+
+kotlin break
+
+kotlin continue jump structure
+
+kotlin function
+
+kotlin recursion
+
+default and name argument
+
+kotlin lambdas
+
+high order function
+
+inline function
