@@ -1,0 +1,67 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main(){
+//     println("hello world")
+    Condition()
+}
+
+fun Condition(){
+	// condition there are three type expression
+	// if-else expression
+	// if-else if-else ladder expression
+	// nested if condition
+	
+    val num1: Int = 10
+    val num2: Int = 20
+    var result = if(num1 > num2 ){
+        "$num1 is greate than $num2"
+    }else{
+        "$num1 is smaller than $num2"
+    }
+    println(result)
+    
+    // make code pretty 
+    // we can remove braces if body is only one statement like
+    
+    result = if(num1 < num2) "$num1 is greate than $num2" else "$num1 is smaller than $num2"
+    println(result)
+    
+    
+    
+    // are you able to vote
+    // make code to check you are able to vote with if else if condition
+	
+	val age : Int = 18 
+    
+    var vote = if(age > 18) "you can vote :)" 
+    else if(age == 18) "congratulations you can vote now" 
+    else if(age < 18) "you are not able to vote" 
+    else "something is wrong"
+	
+    println(vote)
+
+    
+    // now another logic code compare three number which is greater
+    // 
+    // 
+    // 
+    // 
+//     val a : Int    
+//     val b : Int
+//     val c : Int
+//     a = 55
+//     b = 2
+//     c = 3
+    
+//     val greater : String = if(a > b){
+//         if(a > c) "a is greater" else "c is greater"
+//     }else if(b > a){
+//          if(b > c) "b is greater" else "c is greater"
+//     }else{
+//         "something is wrong"
+//     }
+    
+//     println(greater)
+}

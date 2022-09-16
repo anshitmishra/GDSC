@@ -1,0 +1,73 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main(){
+//     println("hello world")
+//     Whileloops()
+//     
+    doWhileLoop()
+}
+
+fun Whileloops(){
+//     loop is used to programming to repeat a specific block of code until certain condition is met
+//  imagine you need to print 50 time a text it can easily done by while
+ 
+//     there are to types of loops we are using while loop
+
+// syntax 
+// while( condition ){
+// task to perform
+// }
+// 
+// 
+// the condition inside paranthesis expression is Boolean expresion
+
+    var i = 1
+    while (i <= 5){
+        println(i)
+        i++ // most important you need to increase every time loop run 
+    }
+    
+//     make a code to sum all natural number from 1 to 100
+//     
+
+	var sum = 0
+    var number = 100
+    while (number != 0){
+        sum = sum + number
+        --number
+    }
+	println("sum of natural number = $sum")
+
+}
+
+
+
+
+fun doWhileLoop(){
+//     do while loop is similar to while loop except one key diffence a do-while loop execute atleast one time
+//     
+//     
+//     as you can see this loop will run atleast one time
+	var Condition : Boolean = false
+    do {
+        println("do-while")
+    }while(Condition)
+    
+    
+    var i = 1    
+    do{
+        println(i)
+        i++
+    }while(i<=5)
+    
+    
+//     trick key of do-while
+//     
+	   var i2 = 10    
+    do{
+        println(i2)
+        i2++
+    }while(i2<=5)
+}

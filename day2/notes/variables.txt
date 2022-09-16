@@ -1,0 +1,44 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main(){
+//     println("hello world")
+    variable()
+}
+
+
+fun variable(){
+    //variabel without data type
+    var name = "anshit"
+   	val payment = 25
+    
+	//variabel with data type
+	
+   // var name1:String = "Anshit"
+   // val payment1:Int = 25
+    
+    // changing var variabel 
+    // 
+   
+	//var name2 : String
+    //name2 = "anshit"
+    //val payment2 : Int
+	//payment explain how ?? important note we are defining only not changing payment  
+    //payment2 = 2500
+    
+    
+    // more important to know 
+	//what not to do 
+	//var name3  // you must need to define variable data type
+    //name3 = "anshit"
+    
+    // type error if you define string and declares a int value it will show error
+    //var Payment3 : String
+    //Payment3 = 25 // it will show error
+    
+    println(name2)
+    println(payment2)
+    
+    
+}

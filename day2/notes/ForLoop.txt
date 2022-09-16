@@ -1,0 +1,75 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main(){
+//     println("hello world")
+    Forloops()
+}
+
+fun Forloops(){
+//     loops is used to iterate a part of program several time
+//     
+//     
+//     syntax 
+//     for (item in collection){
+//     //body
+//     }
+//     
+
+//     iterate through array
+//     loops in c++
+//     
+//     int arr[] = { 10, 20, 30, 40};
+//     for (int i = 0; i < 5; i++){
+//     		cout<<arr[$i]<<endl;
+//     }
+//     
+//     
+//     
+    
+    val marks = arrayOf(80,60,70,50,70)
+    for (item in marks){
+        println(item)
+    }
+    
+    
+//     making code pretty
+//     
+	for(item in marks) println(item)
+
+//     how to find index number in this for loop
+//     
+//     indices is index of array 
+//     
+    for (item in marks.indices) println("marks[$item] : "+ marks[item])
+    
+    
+    // iterate through range
+    // print 5 kii table 
+    
+    for (i in 1..10) println("5 x $i = " + 5*i)
+    
+    
+    // different type operation we can perform
+    // 
+	// suppose you need to itrate 10 to 1 
+	// how you will perform
+	
+    for (i in 10 downTo 1) println(i)
+    
+     // 
+	// suppose you need to itrate 1 to 10 but ever second value must be escape  
+	// how you will perform
+    
+    for (i in 1..10 step 2) println(i)
+    
+    // 
+	// suppose you need to itrate 10 to 1 but ever second value must be escape  
+	// how you will perform
+    
+    for (i in 10 downTo 1 step 2) println(i)
+    
+    
+    
+}
